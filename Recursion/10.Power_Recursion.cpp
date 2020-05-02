@@ -18,7 +18,7 @@ int power1(int x, int y) // O(logn)
     else if (y % 2 == 0)
         return power1(x * x, y / 2);
     else
-        return x * power(x * x, (y - 1) / 2);
+        return x * power1(x * x, (y - 1) / 2);
 }
 
 int main()
