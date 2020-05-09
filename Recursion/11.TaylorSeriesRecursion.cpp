@@ -38,13 +38,15 @@ int main()
 {
     int x, n;
     cin >> x >> n;
+    //Method I
     float summ = 0;
     for (int i = 0; i < n; i++)
     {
         summ += power(x, i) / fact(i);
     }
     cout << "Sum of Taylor Series = " << summ;
-
+    
+    //Method II
     double sum_r = e(x, n);
     cout << "\nSum using Recursive Sum function = " << sum_r;
 }
