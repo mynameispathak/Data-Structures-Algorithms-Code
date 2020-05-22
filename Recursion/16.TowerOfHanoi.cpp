@@ -9,6 +9,7 @@ int TOH(int n, int A, int B, int C)
         cout << "Move tower " << A << " to " << C << endl;
         TOH(n - 1, B, A, C);
     }
+    return 0;
 }
 
 int main()
@@ -17,4 +18,6 @@ int main()
     cout << "Enter the number of disks : " << endl;
     cin >> n;
     TOH(n, A, B, C);
+
+    return 0;
 }
