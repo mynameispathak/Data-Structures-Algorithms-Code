@@ -53,7 +53,7 @@ int main()
     struct Node *temp;
     int A[] = {3, 5, 7, 10, 25, 8, 32, 2};
     create(A, 8);
-    temp = Search(first, 8);
-    printf(“% d”, temp->data);
+    temp = RSearch(first, 8);
+    printf("% d", temp->data);
     return 0;
 }

@@ -47,6 +47,6 @@ int main()
 {
     int A[] = {10, 20, 30, 40, 50};
     create(A, 5);
-    printf(“% d\n”, isSorted(first));
+    printf("% d\n", isSorted(first));
     return 0;
 }

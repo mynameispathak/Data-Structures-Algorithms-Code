@@ -62,7 +62,7 @@ int main()
 {
     int A[] = {10, 20, 30, 40, 50};
     create(A, 5);
-    printf(“% d\n”, SortedInsert(first, 15));
+    printf("% d\n", SortedInsert(first, 15));
     Display(first);
     return 0;
 }

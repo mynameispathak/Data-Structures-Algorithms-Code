@@ -38,7 +38,7 @@ int RMax(struct Node *p)
 {
     int x = 0;
     if (p == 0)
-        return INT32_MIN;
+        return -__INT32_MAX__ + 1;
     x = RMax(p->next);
     if (x > p->data)
         return x;
@@ -49,6 +49,6 @@ int main()
 {
     int A[] = {3, 5, 7, 10, 25, 8, 32, 2};
     create(A, 8);
-printf(“Max %d\n”,Max(first);
+printf("Max %d\n",Max(first);
 return 0;
 }
