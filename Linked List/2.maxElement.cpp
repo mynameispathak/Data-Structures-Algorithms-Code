@@ -25,7 +25,7 @@ void create(int A[], int n)
 }
 int Max(struct Node *p)
 {
-    int max = INT32_MIN;
+    int max = -(__INT32_MAX__ + 1);
     while (p)
     {
         if (p->data > max)
@@ -49,6 +49,6 @@ int main()
 {
     int A[] = {3, 5, 7, 10, 25, 8, 32, 2};
     create(A, 8);
-printf("Max %d\n",Max(first);
-return 0;
+    printf("Max %d\n", Max(first));
+    return 0;
 }
