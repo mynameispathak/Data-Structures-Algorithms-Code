@@ -63,7 +63,7 @@ int main()
 */
 int getNthFromLast(Node *head, int n)
 {
-    // Solution using Sliding Pointers
+    // Solution using Two Pointers
     if (head == NULL)
         return -1;
 
@@ -71,9 +71,8 @@ int getNthFromLast(Node *head, int n)
 
     for (int i = 0; i < n; i++)
     {
+        first = first->next;
         if (first != NULL)
-            first = first->next;
-        else
             return -1;
     }
 
